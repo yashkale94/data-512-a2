@@ -24,6 +24,8 @@ wp_wpds_politicians_by_country.csv: This file contains all the records that are 
 2. page: The name of the wikipedia page
 3. article_quality: This contains the class in which these articles are classified into, namely: FA - Featured article, GA - Good article, B - B-class article, C - C-class article, Start - Start-class article, Stub - Stub-class article.
 4. rev_id: This contains the revision id for the articles.
-5. Population: This contains the population of the country
+5. Population: This contains the population of the country.
 
-
+# API
+The following API was used for generating the predictions for all the articles with revision_ids:
+[ORES REST API](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model)
