@@ -29,3 +29,12 @@ wp_wpds_politicians_by_country.csv: This file contains all the records that are 
 # API
 The following API was used for generating the predictions for all the articles with revision_ids:
 [ORES REST API](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model)
+
+# RESULT
+The result contains 6 tables that show:
+1) Top 10 countries by coverage: Top 10 countries ranked by the total number of articles divided by the population of the country.
+2) Bottom 10 countries by coverage: Bottom 10 countries ranked by the total number of articles divided by the population of the country.
+3) Top 10 countries by relative article quality: Top 10 countries ranked by the ratio of number of GA/FA articles divided by total number of articles in the country.
+4) Bottom 10 countries by relative article quality: Bottom 10 countries ranked by the ratio of number of GA/FA articles divided by total number of articles in the country.
+5) Geographical regions based on coverage: Descending order of geographical regions based on number of articles in the region divided by the population of the region.
+6) Geogrphical regions based on relative article quality: Descending order of geographical regions based on number of GA/FA articles in the region divided by the total number of articles in the region.
